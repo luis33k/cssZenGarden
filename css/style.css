@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    color: #333;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.intro {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.intro a {
+    color: #007acc;
+    font-weight: 500;
+}
+
+.intro a:hover {
+    color: #005fa3;
+}
+
+.main {
+    flex: 3;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main h3 {
+    margin-top: 0;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.summary, .preamble {
+    margin-bottom: 20px;
+}
+
+.summary p, .preamble p {
+    line-height: 1.8;
+}
+
+.summary a, .preamble a {
+    color: #007acc;
+}
+
+.summary a:hover, .preamble a:hover {
+    color: #005fa3;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sidebar h3 {
+    color: #fff;
+    border-bottom: 2px solid #a5a5a5;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.sidebar a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #007acc;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007acc;
+}
+
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .intro {
+        padding: 20px;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+}
